@@ -32,11 +32,12 @@ body, html {
   }
   
   ::-webkit-scrollbar{
-	width: 10px;
+	width: 5px;
+    max-height: 10px;
 }
 
 ::-webkit-scrollbar-track-piece{
-	background-color: transparent !important;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb{
