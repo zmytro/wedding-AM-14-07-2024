@@ -1,3 +1,7 @@
+@font-face {
+  font-family: AnastasiaScript;
+  src:local("src\fonts");
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -97,4 +101,16 @@ body, html {
 
 ::-webkit-scrollbar-thumb:hover{
 	background-color: #909090;
+}
+
+.font{
+  font-family: AnastasiaScript;
+  z-index: 1000;
+  font-size: 128pt;
+}
+
+.font-times{
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 1000;
+  font-size: 64pt;
 }
