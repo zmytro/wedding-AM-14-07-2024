@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Bickham';
+    src: url('src/fonts/Bickham.ttf')
+        /* Add additional src declarations for other font formats if needed */
+}
+
+body {
+    /*background-color: #f8f9fa;*/
+    /* Цвет фона страницы */
+    padding: 1px;
+    background-image: url('src/img/white-grey-scratone.png');
+    background-size: 120px;
+    /* Отступы вокруг контента */
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Центрирование по вертикали */
+        height: 100vh;
+        /* Сделаем контейнер по высоте во всю видимую область */
+    }
+
+    .main-logo img {
+        width: 80%;
+        /* Ширина логотипа в процентах */
+        height: auto;
+        /* Автоматическая высота */
+        margin-top: 40px;
+        margin-left: auto;
+        /* Центрирование по левому краю */
+        margin-right: auto;
+        /* Центрирование по правому краю */
+    }
+
+    .main-logo {
+        text-align: center;
+    }
+
+    .names {
+        font-family: Bickham;
+        font-size: 10vw;
+        text-align: center;
+        max-width: 100%;
+    }
+    .invitation {
+        text-align: center;
+    }
+    .invitation h1 {
+        text-align: center;
+    }
+
+    .date {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .location {
+        font-style: italic;
+    }
+
+    .image-card {
+        margin-top: 30px;
+    }
+
+    /* CSS правила для мобильных устройств с шириной экрана до 767 пикселей */
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Центрирование по вертикали */
+        height: 100vh;
+        /* Сделаем контейнер по высоте во всю видимую область */
+    }
+
+    .main-logo img {
+        width: 50%;
+        /* Ширина логотипа в процентах */
+        height: auto;
+        /* Автоматическая высота */
+        margin-top: 40px;
+        margin-left: auto;
+        /* Центрирование по левому краю */
+        margin-right: auto;
+        /* Центрирование по правому краю */
+    }
+
+    .main-logo {
+        text-align: center;
+        /*
+    }
+    .invitation {
+        text-align: center;
+    }
+    .invitation h1 {
+        color: #dc3545; /* Цвет заголовка */
+    }
+
+    .names {
+        font-family: Bickham;
+        font-size: 6vw;
+        text-align: center;
+        width: 100%;
+    }
+
+    .invitation h1 {
+        text-align: center;
+    }
+
+    .invitation {
+        width: 100%;
+    }
+
+    .date {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .location {
+        font-style: italic;
+    }
+
+    .image-card {
+        margin-top: 30px;
+    }
+}
