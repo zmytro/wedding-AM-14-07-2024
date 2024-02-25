@@ -92,19 +92,13 @@ body {
     .location {
         font-style: italic;
     }
-    .row-image-card {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        width: 100%;
-    }
+
     .photo-card {
         width: 380px; /* Устанавливаем ширину карточки */
         border-radius: 15px; /* Задаем радиус скругления краев */
         border: none;
         background-color: transparent;
+        text-align: center;
     }
       .photo-card img {
         width: 100%; /* Растягиваем изображение на всю ширину карточки */
