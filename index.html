@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'Bickham';
+            src: url('/src/fonts/Bickham.ttf')
+            /* Add additional src declarations for other font formats if needed */
+        }
+
+        body {
+            /*background-color: #f8f9fa;*/
+            /* Цвет фона страницы */
+            padding: 5px;
+            background-image: url('/src/img/white-grey-scratone.png');
+    background-size: 98px;
+            /* Отступы вокруг контента */
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Центрирование по вертикали */
+            height: 100vh;
+            /* Сделаем контейнер по высоте во всю видимую область */
+        }
+
+        .main-logo img {
+            width: 60%;
+            /* Ширина логотипа в процентах */
+            height: auto;
+            /* Автоматическая высота */
+            margin-left: auto;
+            /* Центрирование по левому краю */
+            margin-right: auto;
+            /* Центрирование по правому краю */
+        }
+
+        .main-logo {
+            text-align: center;
+            /*
+        }
+        .invitation {
+            text-align: center;
+        }
+        .invitation h1 {
+            color: #dc3545; /* Цвет заголовка */
+        }
+
+        .names {
+            font-family: Bickham;
+            font-size: 6vw;
+            text-align: center;
+        }
+
+        .invitation h1 {
+            text-align: center;
+        }
+
+        .date {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .location {
+            font-style: italic;
+        }
+
+        .image-card {
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <img src="src/0.jpg" alt="Big Image" class="big-image">
-    <div class="main"></div>
-    <div class="timer">
-      <div id="timerDays"><p>00</p></div>
-      <div id="timerHours"><p>00</p></div>
-      <div id="timerMinutes"><p>00</p></div>
-      <div id="timerSeconds"><p>00</p></div>
+
+    <div class="container">
+        <div class="main-logo">
+            <img src="src/img/Linonia_Bookplate_new.png" alt="Main Logo">
+        </div>
+
+        <div class="invitation">
+            <div class="names">
+                <p>Александр & Мария</p>
+            </div>
+            <p>Мы рады пригласить вас разделить с нами этот особенный день! Присоединитесь к нам для церемонии и
+                празднования.</p>
+            <p class="date">Дата: 25 апреля 2024</p>
+            <p class="location">Место: Ресторан "Золотая Осень", ул. Пушкина, д. 10, г. Примерово</p>
+
+            <div class="row image-card">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="font"><p>Александр & Мария</p></div>
-    <div class="font-times"><p>Этот день</p></div>
-  </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
