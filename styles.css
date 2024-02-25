@@ -94,7 +94,7 @@ body {
     }
 
     .photo-card {
-        width: 380px; /* Устанавливаем ширину карточки */
+        width: 300px; /* Устанавливаем ширину карточки */
         border-radius: 15px; /* Задаем радиус скругления краев */
         border: none;
         background-color: transparent;
