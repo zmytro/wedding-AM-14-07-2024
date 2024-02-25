@@ -30,7 +30,7 @@ body {
         /* Ширина логотипа в процентах */
         height: auto;
         /* Автоматическая высота */
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: auto;
         /* Центрирование по левому краю */
         margin-right: auto;
@@ -42,8 +42,9 @@ body {
     }
 
     .names {
+        margin-top: 10px;
         font-family: Bickham;
-        font-size: 10vw;
+        font-size: 11vw;
         text-align: center;
         max-width: 100%;
     }
