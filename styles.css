@@ -68,18 +68,22 @@ body {
         text-align: center;
         max-width: 100%;
     }
+
     .invitation {
         text-align: center;
     }
+
     .invitation h1 {
         text-align: center;
     }
-    .day{
+
+    .day {
         font-family: Cormorant Semi-Bold;
         text-align: center;
         align-items: center;
         font-size: 1rem;
     }
+
     .date {
         font-size: 1.2em;
         margin-top: 20px;
@@ -88,10 +92,24 @@ body {
     .location {
         font-style: italic;
     }
-
-    .image-card {
+    .row-image-card {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         margin-top: 30px;
+        width: 100%;
     }
+    .photo-card {
+        width: 380px; /* Устанавливаем ширину карточки */
+        border-radius: 15px; /* Задаем радиус скругления краев */
+        border: none;
+        background-color: transparent;
+    }
+      .photo-card img {
+        width: 100%; /* Растягиваем изображение на всю ширину карточки */
+        height: auto; /* Сохраняем соотношение сторон изображения */
+      }
 
     /* CSS правила для мобильных устройств с шириной экрана до 767 пикселей */
 }
@@ -149,13 +167,15 @@ body {
         align-items: center;
         justify-content: center;
     }
-    .day{
+
+    .day {
         font-family: Cormorant Semi-Bold;
         text-align: center;
         align-items: center;
         font-size: 1.8rem;
-        
+
     }
+
     .date {
         font-size: 1.2em;
         margin-top: 20px;
@@ -165,7 +185,26 @@ body {
         font-style: italic;
     }
 
-    .image-card {
-        margin-top: 30px;
+    .row-image-card {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
+
+    .card {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .photo-card {
+        width: 800px; /* Устанавливаем ширину карточки */
+        border-radius: 30px; /* Задаем радиус скругления краев */
+        border: none;
+        background-color: transparent;
+      }
+      .photo-card img {
+        width: 100%; /* Растягиваем изображение на всю ширину карточки */
+        height: auto; /* Сохраняем соотношение сторон изображения */
+      }
 }
