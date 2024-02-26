@@ -29,7 +29,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-image: url("/src/img/white-grey-scratone.png");
+  background-image: url("../src/img/white-grey-scratone.png");
   background-size: 120px;
 }
 .home-hero {
@@ -64,6 +64,7 @@
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 767px) {
 .home-hero-logo{
  display: flex;
  align-items: center;
@@ -71,13 +72,29 @@
  flex-direction: column;
 }
 .home-hero-logo img {
-  width: 60%;
+  width: 80%;
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+}
 
+@media screen and (min-width: 767px) {
+  .home-hero-logo{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+  }
+  .home-hero-logo img {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  }
 .home-heading {
   text-align: center;
   margin-bottom: var(--dl-space-space-fiveunits);
