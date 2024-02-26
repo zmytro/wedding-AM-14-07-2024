@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'Bickham';
-  src: url('./src/fonts/Bickham.ttf')
+  src: url('../src/fonts/Bickham.ttf')
       /* Add additional src declarations for other font formats if needed */
 }
 
 @font-face {
   font-family: 'Cormorant Regular';
-  src: url('./src/fonts/CormorantGaramond-Regular.ttf')
+  src: url('../src/fonts/CormorantGaramond-Regular.ttf')
       /* Add additional src declarations for other font formats if needed */
 }
 
 @font-face {
   font-family: 'Cormorant Bold';
-  src: url('./src/fonts/CormorantGaramond-Bold.ttf')
+  src: url('../src/fonts/CormorantGaramond-Bold.ttf')
       /* Add additional src declarations for other font formats if needed */
 }
 
 @font-face {
   font-family: 'Cormorant Semi-Bold';
-  src: url('./src/fonts/CormorantGaramond-SemiBold.ttf')
+  src: url('../src/fonts/CormorantGaramond-SemiBold.ttf')
       /* Add additional src declarations for other font formats if needed */
 }
 :root {
