@@ -176,7 +176,7 @@
   }
 
   .Section-Text {
-    font-size: 4vw;
+    font-size: 18px;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
     line-height: 1.55;
@@ -246,7 +246,7 @@
   }
 
   .Section-Heading-1 {
-    font-size: 4vw;
+    font-size: 20px;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
     line-height: 1.55;
@@ -327,7 +327,7 @@
   }
 
   .Section-Text {
-    font-size: 1.5vw;
+    font-size: 24px;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
     line-height: 1.55;
@@ -396,7 +396,7 @@
   }
 
   .Section-Heading-1 {
-    font-size: 1.5vw;
+    font-size: 24px;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
     line-height: 1.55;
