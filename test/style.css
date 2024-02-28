@@ -1,26 +1,96 @@
 @font-face {
   font-family: 'Bickham';
   src: url('../src/fonts/Bickham.ttf')
-      /* Add additional src declarations for other font formats if needed */
+    /* Add additional src declarations for other font formats if needed */
 }
 
 @font-face {
   font-family: 'Cormorant Regular';
   src: url('../src/fonts/CormorantGaramond-Regular.ttf')
-      /* Add additional src declarations for other font formats if needed */
+    /* Add additional src declarations for other font formats if needed */
 }
 
 @font-face {
   font-family: 'Cormorant Bold';
   src: url('../src/fonts/CormorantGaramond-Bold.ttf')
-      /* Add additional src declarations for other font formats if needed */
+    /* Add additional src declarations for other font formats if needed */
 }
 
 @font-face {
   font-family: 'Cormorant Semi-Bold';
   src: url('../src/fonts/CormorantGaramond-SemiBold.ttf')
-      /* Add additional src declarations for other font formats if needed */
+    /* Add additional src declarations for other font formats if needed */
 }
+
+@font-face {
+  font-family: 'Cloister';
+  src: url('../src/fonts/Cloister_Open_Face_Regular.otf')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  max-height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #CBCBCB;
+  outline: 2px solid #FFF;
+  outline-offset: -2px;
+  border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
+
+
+
+#timerDays{
+  /*width: 10%;*/
+  height: auto;
+  display: flex;
+  margin-right: 5%;
+  background-color: transparent;
+  align-content: center;  
+  justify-content: center;
+  align-items: center;
+}
+#timerHours{
+  display: flex;
+ /*width: 10%;*/
+ margin-right: 5%;
+  height: auto;
+  background-color: transparent;
+  align-content: center;  
+  justify-content: center;
+  align-items: center;
+}
+#timerMinutes{
+  display: flex;
+ /*width: 10%;*/
+  height: auto;
+  margin-right: 5%;
+  background-color: transparent;
+  align-content: center;  
+  justify-content: center;
+  align-items: center;
+}
+#timerSeconds{
+  display: flex;
+  /*width: 10%;*/
+  height: auto;
+  background-color: transparent;
+  align-content: center;  
+  justify-content: center;
+  align-items: center;
+}
+
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
@@ -40,133 +110,25 @@
   --dl-color-success-700: #4CC366;
   --dl-radius-radius-round: 50%;
   --dl-size-size-maxcontent: 1414px;
-  --dl-space-space-halfunit: 4px;
-  --dl-space-space-tenunits: 80px;
-  --dl-radius-radius-radius2: 2px;
-  --dl-radius-radius-radius4: 4px;
-  --dl-radius-radius-radius8: 8px;
-  --dl-space-space-fiveunits: 40px;
-  --dl-space-space-fourunits: 32px;
-  --dl-radius-radius-radius24: 24px;
-  --dl-space-space-doubleunit: 16px;
-  --dl-space-space-tripleunit: 24px;
+  --dl-space-space-halfunit: 2px;
+  --dl-space-space-tenunits: 40px;
+  --dl-radius-radius-radius2: 1px;
+  --dl-radius-radius-radius4: 2px;
+  --dl-radius-radius-radius8: 4px;
+  --dl-space-space-logo: 5px;
+  --dl-space-space-fiveunits: 20px;
+  --dl-space-space-fourunits: 16px;
+  --dl-radius-radius-radius24: 12px;
+  --dl-space-space-doubleunit: 8px;
+  --dl-space-space-tripleunit: 12px;
 }
 
 @media screen and (max-width: 767px) {
-.teleport-show {
-  display: flex !important;
-  transform: none !important;
-}
-.list {
-  width: 100%;
-  margin: 1em 0px 1em 0px;
-  display: block;
-  padding: 0px 0px 0px 1.5rem;
-  list-style-type: none;
-  list-style-position: outside;
-}
-.list-item {
-  display: list-item;
-}
-.button {
-  color: var(--dl-color-gray-black);
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-family: Raleway;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.textarea {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem;
-  font-family: Raleway;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.input {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem 1rem;
-  font-family: Raleway;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.Section-Text {
-  font-size: 18px;
-  font-family: Cormorant Semi-Bold;
-  font-weight: 400;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.SmallCard-Heading {
-  font-size: 18px;
-  font-style: normal;
-  font-family: Raleway;
-  font-weight: 700;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.Card-Text {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Raleway;
-  font-weight: 400;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.BigCard-Heading {
-  font-size: 36px;
-  font-style: normal;
-  font-family: Montserrat;
-  font-weight: 700;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.Card-Heading {
-  font-size: 24px;
-  font-style: normal;
-  font-family: Raleway;
-  font-weight: 700;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.Anchor {
-  font-size: 18px;
-  font-style: normal;
-  font-family: Raleway;
-  font-weight: 700;
-  line-height: 1.55;
-  text-transform: capitalize;
-  text-decoration: none;
-}
-.Section-Heading {
-  white-space: nowrap;
-    font-size: 11vw; 
-  font-family: Bickham;
-  font-weight: 400;
-  line-height: 1.22;
-  text-transform: none;
-  text-decoration: none;
-
-}
-}
-@media screen and (min-width: 767px) {
   .teleport-show {
     display: flex !important;
     transform: none !important;
   }
+
   .list {
     width: 100%;
     margin: 1em 0px 1em 0px;
@@ -175,9 +137,11 @@
     list-style-type: none;
     list-style-position: outside;
   }
+
   .list-item {
     display: list-item;
   }
+
   .button {
     color: var(--dl-color-gray-black);
     display: inline-block;
@@ -188,6 +152,7 @@
     border-radius: 4px;
     background-color: var(--dl-color-gray-white);
   }
+
   .textarea {
     color: var(--dl-color-gray-black);
     cursor: auto;
@@ -198,6 +163,7 @@
     border-radius: 4px;
     background-color: var(--dl-color-gray-white);
   }
+
   .input {
     color: var(--dl-color-gray-black);
     cursor: auto;
@@ -208,14 +174,16 @@
     border-radius: 4px;
     background-color: var(--dl-color-gray-white);
   }
+
   .Section-Text {
-    font-size: 18px;
+    font-size: 4vw;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
     line-height: 1.55;
     text-transform: none;
     text-decoration: none;
   }
+
   .SmallCard-Heading {
     font-size: 18px;
     font-style: normal;
@@ -225,6 +193,7 @@
     text-transform: none;
     text-decoration: none;
   }
+
   .Card-Text {
     font-size: 16px;
     font-style: normal;
@@ -234,6 +203,7 @@
     text-transform: none;
     text-decoration: none;
   }
+
   .BigCard-Heading {
     font-size: 36px;
     font-style: normal;
@@ -243,6 +213,7 @@
     text-transform: none;
     text-decoration: none;
   }
+
   .Card-Heading {
     font-size: 24px;
     font-style: normal;
@@ -252,6 +223,7 @@
     text-transform: none;
     text-decoration: none;
   }
+
   .Anchor {
     font-size: 18px;
     font-style: normal;
@@ -261,13 +233,192 @@
     text-transform: capitalize;
     text-decoration: none;
   }
+
   .Section-Heading {
     white-space: nowrap;
-    font-size: 9vw; 
+    font-size: 11vw;
+    font-family: Bickham;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+
+  }
+
+  .Section-Heading-1 {
+    font-size: 4vw;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+
+    
+  }
+  .timer{
+    width: 100%;
+    white-space: nowrap;
+    font-size: 6vw;
+    font-family: Cloister;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  .teleport-show {
+    display: flex !important;
+    transform: none !important;
+  }
+
+  .list {
+    width: 100%;
+    margin: 1em 0px 1em 0px;
+    display: block;
+    padding: 0px 0px 0px 1.5rem;
+    list-style-type: none;
+    list-style-position: outside;
+  }
+
+  .list-item {
+    display: list-item;
+  }
+
+  .button {
+    color: var(--dl-color-gray-black);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .textarea {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .input {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem 1rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .Section-Text {
+    font-size: 1.5vw;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .SmallCard-Heading {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Text {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .BigCard-Heading {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Heading {
+    font-size: 24px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Anchor {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .Section-Heading {
+    white-space: nowrap;
+    font-size: 9vw;
     font-family: Bickham;
     font-weight: 400;
     line-height: 1.22;
     text-transform: none;
     text-decoration: none;
   }
+
+  .Section-Heading-1 {
+    font-size: 1.5vw;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
   }
+
+  .timer{
+    width: 100%;
+    white-space: nowrap;
+    font-size: 4vw;
+    margin: 5%;
+    font-family: Cloister;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+}

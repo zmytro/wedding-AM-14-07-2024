@@ -1,8 +1,8 @@
 // Задайте дату, до которой нужно отсчитывать время
-var targetDate = new Date("February 24, 2024 16:16:30").getTime();
+var targetDate = new Date("July 14, 2024 20:00:00").getTime();
 
 // Обновляйте таймер каждую секунду
-var timer = setInterval(function() {
+var timer = setInterval(function () {
 
     // Получите текущую дату и время
     var currentDate = new Date().getTime();
@@ -17,8 +17,8 @@ var timer = setInterval(function() {
     var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
     // Выведите результат
-    console.log(days + "days " + hours + "hours " + minutes + "minutes " + seconds + "seconds ");
-    
+    //console.log(days + "days " + hours + "hours " + minutes + "minutes " + seconds + "seconds ");
+
 
     // Если время истекло, очистите интервал таймера
     if (remainingTime < 0) {
@@ -34,11 +34,27 @@ var timer = setInterval(function() {
     var timerElementHours = document.getElementById("timerHours");
     var timerElementMinutes = document.getElementById("timerMinutes");
     var timerElementSeconds = document.getElementById("timerSeconds");
+
+    // Выводим результат
+    /*       if(days < 2.0){
+            timerElementDays.innerHTML = days + " day";
+        }else timerElementDays.innerHTML = days + " days";
+
+        if(hours < 2.0){
+            timerElementHours.innerHTML = hours + " hour";
+        }else timerElementHours.innerHTML = hours + " hours";
+
+        if(minutes < 2.0){
+            timerElementMinutes.innerHTML = minutes + " minute";
+        }else timerElementMinutes.innerHTML = minutes + " minutes";
         
-        // Выводим результат
-        timerElementDays.innerHTML = days;
-        timerElementHours.innerHTML = hours;
-        timerElementMinutes.innerHTML = minutes;
-        timerElementSeconds.innerHTML = seconds;
+        if(seconds < 2.0){
+            timerElementSeconds.innerHTML = seconds + " second";
+        }else timerElementSeconds.innerHTML = seconds + " seconds";
+*/
+    timerElementDays.innerHTML = days + "d ";
+    timerElementHours.innerHTML = hours + "h ";
+    timerElementMinutes.innerHTML = minutes + "m ";
+    timerElementSeconds.innerHTML = seconds + "s ";
 
 }, 1000); // обновление каждую секунду
