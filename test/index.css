@@ -197,14 +197,16 @@
   padding-right: var(--dl-space-space-tripleunit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
+  text-align: justify;
 }
 
 .home-heading-container {
-  width: 45%;
+  width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: var(--dl-space-space-fiveunits);
   flex-direction: column;
+  text-align: justify;
 }
 
 .home-text01 {
@@ -690,12 +692,13 @@
   }
 
   .home-hero-text {
-    width: 70%;
+    width: 100%;
   }
 
   .home-features {
     padding-top: var(--dl-space-space-fiveunits);
     padding-bottom: var(--dl-space-space-fiveunits);
+    text-align: justify;
   }
 
   .home-features-card {
