@@ -50,45 +50,66 @@
 }
 
 
+/*
+#timerDays {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-right: 5%;
+  background-color: transparent;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
 
-#timerDays{
-  /*width: 10%;*/
-  height: auto;
+#timerHours {
   display: flex;
+  width: auto;
   margin-right: 5%;
-  background-color: transparent;
-  align-content: center;  
-  justify-content: center;
-  align-items: center;
-}
-#timerHours{
-  display: flex;
- /*width: 10%;*/
- margin-right: 5%;
   height: auto;
   background-color: transparent;
-  align-content: center;  
+  align-content: center;
   justify-content: center;
   align-items: center;
+  text-align: right;
+
 }
-#timerMinutes{
+
+#timerMinutes {
   display: flex;
- /*width: 10%;*/
+  width: auto;
   height: auto;
   margin-right: 5%;
   background-color: transparent;
-  align-content: center;  
+  align-content: center;
   justify-content: center;
   align-items: center;
+  text-align: right;
+
 }
-#timerSeconds{
+
+#timerSeconds {
   display: flex;
-  /*width: 10%;*/
+  width: auto;
   height: auto;
   background-color: transparent;
-  align-content: center;  
+  align-content: center;
   justify-content: center;
   align-items: center;
+  text-align: right;
+}*/
+
+#timerDays,
+#timerHours,
+#timerMinutes,
+#timerSeconds {
+    flex: 1;
+    display: flex;
+    height: auto;
+    margin-right: 5%;
+    background-color: transparent;
+    text-align: center;
 }
 
 :root {
@@ -179,8 +200,10 @@
     font-size: 20px;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
-    white-space: normal; /* Позволяем перенос текста на новую строку */
-    line-height: 1.2em; /* Устанавливаем высоту строки */
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
     text-transform: none;
     text-decoration: none;
   }
@@ -218,7 +241,7 @@
   .Card-Heading {
     font-size: 24px;
     font-style: normal;
-    font-family: Raleway;
+    font-family: Cormorant Regular;
     font-weight: 700;
     line-height: 1.55;
     text-transform: none;
@@ -249,18 +272,21 @@
   .Section-Heading-1 {
     font-size: 20px;
     font-family: Cormorant Semi-Bold;
-    white-space: normal; /* Позволяем перенос текста на новую строку */
-    line-height: 1.2em; /* Устанавливаем высоту строки */
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
     font-weight: 400;
     text-transform: none;
     text-decoration: none;
 
-    
+
   }
-  .timer{
-    width: 100%;
+
+  .timer {
+    min-width: 50px; /* Примерная минимальная ширина блока */
     white-space: nowrap;
-    font-size: 6vw;
+    font-size: 8vw;
     font-family: Cloister;
     font-weight: 400;
     line-height: 1.22;
@@ -273,6 +299,34 @@
     align-content: center;
     flex-direction: row;
   }
+  .sketchy {
+    padding: 0rem 2rem;
+    display: inline-block;
+    border: 1px solid #333333;
+    /* font-size: 2.5rem; */
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    /* background: #ffffff; */
+    position: relative;
+
+    &::before {
+      content: '';
+      border: 1px solid #353535;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(1deg);
+      border-radius: 10% 1% 2% 9% / 2% 6% 5% 4%;
+    }
+  }
+  .date-icon{
+    width: 2px;
+  }
+
 }
 
 
@@ -370,7 +424,7 @@
   .Card-Heading {
     font-size: 24px;
     font-style: normal;
-    font-family: Raleway;
+    font-family: Cormorant Regular;
     font-weight: 700;
     line-height: 1.55;
     text-transform: none;
@@ -401,14 +455,17 @@
     font-size: 24px;
     font-family: Cormorant Semi-Bold;
     font-weight: 400;
-    white-space: normal; /* Позволяем перенос текста на новую строку */
-    line-height: 1.2em; /* Устанавливаем высоту строки */
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
     text-transform: none;
     text-decoration: none;
   }
 
-  .timer{
-    width: 100%;
+  .timer {
+     /* или 100% в зависимости от ваших потребностей */
+    min-width: 50px; /* Примерная минимальная ширина блока */
     white-space: nowrap;
     font-size: 4vw;
     margin: 5%;
@@ -418,11 +475,35 @@
     text-transform: none;
     text-decoration: none;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: row;
   }
-}
 
+  .sketchy {
+    padding: 0rem 4rem;
+    display: inline-block;
+    border: 2px solid #333333;
+    /* font-size: 2.5rem; */
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    /* background: #ffffff; */
+    position: relative;
+
+    &::before {
+      content: '';
+      border: 2px solid #353535;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(1deg);
+      border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
+  }
+
+}

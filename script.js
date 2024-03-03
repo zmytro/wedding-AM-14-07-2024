@@ -1,5 +1,5 @@
 // Задайте дату, до которой нужно отсчитывать время
-var targetDate = new Date("July 14, 2024 20:00:00").getTime();
+var targetDate = new Date("July 14, 2024 19:27:00").getTime();
 
 // Обновляйте таймер каждую секунду
 var timer = setInterval(function () {
