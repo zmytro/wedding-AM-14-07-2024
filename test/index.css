@@ -22,6 +22,10 @@
     /* Add additional src declarations for other font formats if needed */
 }
 
+.card-href{
+  color: #949494;
+}
+
 .home-container {
   width: 100%;
   height: auto;
@@ -266,7 +270,7 @@
 }
 
 .home-text02 {
-  color: var(--dl-color-gray-700);
+  color: gray;
   text-align: left;
 }
 
