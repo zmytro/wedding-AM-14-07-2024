@@ -309,6 +309,7 @@
     letter-spacing: 0.3ch;
     /* background: #ffffff; */
     position: relative;
+    margin-top: 5%;
 
     &::before {
       content: '';
@@ -491,6 +492,7 @@
     letter-spacing: 0.3ch;
     /* background: #ffffff; */
     position: relative;
+    margin-top: 5%;
 
     &::before {
       content: '';
