@@ -1,5 +1,5 @@
 // Задайте дату, до которой нужно отсчитывать время
-var targetDate = new Date("July 14, 2024 19:27:00").getTime();
+var targetDate = new Date("July 14, 2024 20:00:00").getTime();
 
 // Обновляйте таймер каждую секунду
 var timer = setInterval(function () {
@@ -19,7 +19,18 @@ var timer = setInterval(function () {
     // Выведите результат
     //console.log(days + "days " + hours + "hours " + minutes + "minutes " + seconds + "seconds ");
 
-
+    if (days < 10) {
+        days = "0" + days;
+    }
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
     // Если время истекло, очистите интервал таймера
     if (remainingTime < 0) {
         clearInterval(timer);
@@ -30,10 +41,10 @@ var timer = setInterval(function () {
         console.log("Время истекло!");
     }
 
-    var timerElementDays = document.getElementById("timerDays");
-    var timerElementHours = document.getElementById("timerHours");
-    var timerElementMinutes = document.getElementById("timerMinutes");
-    var timerElementSeconds = document.getElementById("timerSeconds");
+    var timerElementDays = document.getElementById("timerDays-p");
+    var timerElementHours = document.getElementById("timerHours-p");
+    var timerElementMinutes = document.getElementById("timerMinutes-p");
+    var timerElementSeconds = document.getElementById("timerSeconds-p");
 
     // Выводим результат
     /*       if(days < 2.0){
@@ -52,9 +63,9 @@ var timer = setInterval(function () {
             timerElementSeconds.innerHTML = seconds + " second";
         }else timerElementSeconds.innerHTML = seconds + " seconds";
 */
-    timerElementDays.innerHTML = days + "d ";
-    timerElementHours.innerHTML = hours + "h ";
-    timerElementMinutes.innerHTML = minutes + "m ";
-    timerElementSeconds.innerHTML = seconds + "s ";
+    timerElementDays.innerHTML = days;
+    timerElementHours.innerHTML = hours ;
+    timerElementMinutes.innerHTML = minutes ;
+    timerElementSeconds.innerHTML = seconds;
 
 }, 1000); // обновление каждую секунду

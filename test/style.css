@@ -100,17 +100,7 @@
   text-align: right;
 }*/
 
-#timerDays,
-#timerHours,
-#timerMinutes,
-#timerSeconds {
-    flex: 1;
-    display: flex;
-    height: auto;
-    margin-right: 5%;
-    background-color: transparent;
-    text-align: center;
-}
+
 
 :root {
   --dl-color-gray-500: #595959;
@@ -283,6 +273,19 @@
 
   }
 
+.Section-Heading3{
+  white-space: nowrap;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+  font-size: 11vw;
+  font-family: Bickham;
+  font-weight: 400;
+  line-height: 1.22;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+
+}
   .timer {
     min-width: 50px; /* Примерная минимальная ширина блока */
     white-space: nowrap;
@@ -327,7 +330,27 @@
   .date-icon{
     width: 2px;
   }
-
+  #timerDays,
+  #timerHours,
+  #timerMinutes,
+  #timerSeconds{
+      flex: 1;
+      display: flex;
+      height: auto;
+      margin-right: 5%;
+      background-color: transparent;
+      text-align: center;
+      justify-content: center;
+      align-items: baseline;
+  }
+  
+  .timer-days-span,
+  .timer-hours-span,
+  .timer-minutes-span,
+  .timer-seconds-span {
+    font-size: 5vw;
+    color: #8d8d8d;
+  }
 }
 
 
@@ -464,12 +487,23 @@
     text-decoration: none;
   }
 
+  .Section-Heading3{
+    white-space: nowrap;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    font-size: 8vw;
+    font-family: Bickham;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+  }
+
   .timer {
      /* или 100% в зависимости от ваших потребностей */
     min-width: 50px; /* Примерная минимальная ширина блока */
     white-space: nowrap;
     font-size: 4vw;
-    margin: 5%;
     font-family: Cloister;
     font-weight: 400;
     line-height: 1.22;
@@ -492,7 +526,8 @@
     letter-spacing: 0.3ch;
     /* background: #ffffff; */
     position: relative;
-    margin-top: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
     &::before {
       content: '';
@@ -507,5 +542,25 @@
       border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
     }
   }
-
+  #timerDays,
+  #timerHours,
+  #timerMinutes,
+  #timerSeconds{
+      flex: 1;
+      display: flex;
+      height: auto;
+      margin-right: 5%;
+      background-color: transparent;
+      text-align: center;
+      justify-content: center;
+      align-items: baseline;
+  }
+  
+  .timer-days-span,
+  .timer-hours-span,
+  .timer-minutes-span,
+  .timer-seconds-span {
+    font-size: 2vw;
+    color: #8d8d8d;
+  }
 }

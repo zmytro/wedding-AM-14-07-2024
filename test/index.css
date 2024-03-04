@@ -101,6 +101,8 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    image-rendering: -webkit-optimize-contrast; /* для Webkit браузеров */
+    image-rendering: pixelated; /* для остальных браузеров */
   }
 
   .home-hero-photo-2 {
@@ -228,6 +230,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: space-around;
+  padding-top: 1em;
 }
 
 .home-features-card {
