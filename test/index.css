@@ -77,7 +77,7 @@
   }
 
   .home-hero-logo img {
-    width: 80%;
+    width: 85%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -630,6 +630,7 @@
   .home-cards-container {
     align-items: center;
     flex-direction: column;
+    padding-top: 1.5em;
   }
 
   .home-features-card {
