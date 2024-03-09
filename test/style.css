@@ -312,8 +312,8 @@
 
 .Section-Heading3{
   white-space: nowrap;
-  padding-top: 1em;
-  padding-bottom: 0.3em;
+  padding-top: 30px;
+  padding-bottom: 20px;
   font-size: 12vw;
   font-family: Bickham;
   font-weight: 400;
@@ -349,7 +349,7 @@
     letter-spacing: 0.3ch;
     /* background: #ffffff; */
     position: relative;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 
     &::before {
       content: '';

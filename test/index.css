@@ -69,6 +69,13 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .home-text {
+    color: black !important;
+    text-align: center;
+    margin-bottom: var(--dl-space-space-fiveunits);
+  }
+
   .home-hero-logo {
     display: flex;
     align-items: center;
@@ -164,7 +171,11 @@
     align-items: center;
     flex-direction: row;
   }
-  
+  .home-text {
+    color: black !important;
+    text-align: center;
+    margin-bottom: var(--dl-space-space-tenunits);
+  }
 
 }
 
@@ -173,11 +184,7 @@
   margin-bottom: var(--dl-space-space-fiveunits);
 }
 
-.home-text {
-  color: black !important;
-  text-align: center;
-  margin-bottom: var(--dl-space-space-tenunits);
-}
+
 
 .home-cta-btn {
   color: var(--dl-color-gray-white);
@@ -490,19 +497,7 @@
   text-align: left;
 }
 
-.home-services {
-  width: 100%;
-  display: flex;
-  max-width: var(--dl-size-size-maxcontent);
-  margin-top: var(--dl-space-space-fiveunits);
-  align-items: center;
-  /*padding-top: var(--dl-space-space-tenunits);*/
-  padding-left: var(--dl-space-space-tripleunit);
-  margin-bottom: var(--dl-space-space-fiveunits);
-  padding-right: var(--dl-space-space-tripleunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-fiveunits);
-}
+
 
 .home-heading-container1 {
   width: 45%;
@@ -625,12 +620,14 @@
 @media(max-width: 767px) {
   .home-heading-container {
     width: 100%;
+  margin-bottom: var(--dl-space-space-fiveunits);
+
   }
 
   .home-cards-container {
     align-items: center;
     flex-direction: column;
-    padding-top: 1.5em;
+    padding-top: 20px;
   }
 
   .home-features-card {
@@ -715,6 +712,21 @@
     margin-top: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-fourunits);
   }
+  .home-services {
+    width: 100%;
+    display: flex;
+    max-width: var(--dl-size-size-maxcontent);
+    /*margin-top: var(--dl-space-space-fiveunits);*/
+    align-items: center;
+    /*padding-top: var(--dl-space-space-tenunits);*/
+    padding-left: var(--dl-space-space-tripleunit);
+    margin-bottom: var(--dl-space-space-fiveunits);
+    padding-right: var(--dl-space-space-tripleunit);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-fiveunits);
+  }
+  
+  
 }
 
 @media(max-width: 479px) {
@@ -725,7 +737,7 @@
 
   .home-content-container {
     padding-top: var(--dl-space-space-fiveunits);
-    padding-bottom: var(--dl-space-space-fiveunits);
+    /*padding-bottom: var(--dl-space-space-fiveunits);*/
   }
 
   .home-hero-text {
