@@ -667,6 +667,28 @@
     margin-top: var(--dl-space-space-halfunit);
     width: 100%;
   }
+  
+  .home-heading1 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+  .home-heading2 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+  .home-heading3 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+  .home-heading4 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+  .home-heading5 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+  .home-heading6 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+
+
+  
 
   .home-cards-container1 {
     flex-wrap: wrap;
