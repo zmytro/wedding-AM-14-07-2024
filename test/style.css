@@ -28,6 +28,12 @@
     /* Add additional src declarations for other font formats if needed */
 }
 
+@font-face {
+  font-family: 'Onest';
+  src: url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap')
+    /* Add additional src declarations for other font formats if needed */
+}
+
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -135,6 +141,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  #image2 {
+    max-width: 100%; /* Максимальная ширина изображения равна ширине div */
+    max-height: 100%; /* Максимальная высота изображения равна высоте div */
+    display: block; /* Чтобы изображение выровнялось по центру */
+    margin: auto; /* Чтобы изображение выровнялось по центру */
+  }
+
   .teleport-show {
     display: flex !important;
     transform: none !important;
@@ -216,6 +229,17 @@
     line-height: 1.55;
     text-transform: none;
     text-decoration: none;
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+
+  .Card-Text-href {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
   }
 
   .BigCard-Heading {
@@ -231,7 +255,7 @@
   .Card-Heading {
     font-size: 24px;
     font-style: normal;
-    font-family: Cormorant Regular;
+    font-family: Cormorant Semi-Bold;
     font-weight: 700;
     line-height: 1.55;
     text-transform: none;
@@ -260,6 +284,20 @@
   }
 
   .Section-Heading-1 {
+    font-size: 20px;
+    font-family: Cormorant Semi-Bold;
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+
+
+  }
+
+  .Section-Heading-2 {
     font-size: 20px;
     font-family: Cormorant Semi-Bold;
     white-space: normal;
@@ -355,6 +393,15 @@
 
 
 @media screen and (min-width: 767px) {
+
+  #image2 {
+    max-width: 100%; /* Максимальная ширина изображения равна ширине div */
+    max-height: 100%; /* Максимальная высота изображения равна высоте div */
+    display: block; /* Чтобы изображение выровнялось по центру */
+    margin: auto; /* Чтобы изображение выровнялось по центру */
+  }
+
+
   .teleport-show {
     display: flex !important;
     transform: none !important;
@@ -433,6 +480,17 @@
     line-height: 1.55;
     text-transform: none;
     text-decoration: none;
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+
+  .Card-Text-href {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
   }
 
   .BigCard-Heading {
@@ -448,7 +506,7 @@
   .Card-Heading {
     font-size: 24px;
     font-style: normal;
-    font-family: Cormorant Regular;
+    font-family: Cormorant Semi-Bold;
     font-weight: 700;
     line-height: 1.55;
     text-transform: none;
@@ -475,6 +533,21 @@
     text-decoration: none;
   }
 
+  .Section-Heading-2 {
+    font-size: 24px;
+    font-family: Cormorant Semi-Bold;
+    white-space: normal;
+    margin-top: 0.5em;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+
+
+  }
+
   .Section-Heading-1 {
     font-size: 24px;
     font-family: Cormorant Semi-Bold;
@@ -490,7 +563,7 @@
   .Section-Heading3{
     white-space: nowrap;
     padding-top: 0.5em;
-    padding-bottom: 0.3em;
+    padding-bottom: 0.2em;
     font-size: 8vw;
     font-family: Bickham;
     font-weight: 400;

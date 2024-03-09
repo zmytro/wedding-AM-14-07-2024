@@ -22,10 +22,6 @@
     /* Add additional src declarations for other font formats if needed */
 }
 
-.card-href{
-  color: #949494;
-}
-
 .home-container {
   width: 100%;
   height: auto;
@@ -180,7 +176,7 @@
 .home-text {
   color: black !important;
   text-align: center;
-  margin-bottom: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-tenunits);
 }
 
 .home-cta-btn {
@@ -212,7 +208,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-tenunits);
   flex-direction: column;
   text-align: justify;
 }
@@ -273,7 +269,7 @@
 }
 
 .home-text02 {
-  color: gray;
+  color: var(--dl-color-gray-700);
   text-align: left;
 }
 
@@ -500,7 +496,7 @@
   max-width: var(--dl-size-size-maxcontent);
   margin-top: var(--dl-space-space-fiveunits);
   align-items: center;
-  padding-top: var(--dl-space-space-tenunits);
+  /*padding-top: var(--dl-space-space-tenunits);*/
   padding-left: var(--dl-space-space-tripleunit);
   margin-bottom: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-tripleunit);
@@ -513,11 +509,13 @@
   display: flex;
   align-items: center;
   margin-bottom: var(--dl-space-space-fiveunits);
+  margin-top: var(--dl-space-space-fiveunits);
   flex-direction: column;
 }
 
 .home-text08 {
   text-align: center;
+  margin-top: var(--dl-space-space-fourunits);
   margin-bottom: var(--dl-space-space-fourunits);
 }
 
@@ -532,7 +530,7 @@
   max-width: var(--dl-size-size-maxcontent);
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .home-service-card {
@@ -543,7 +541,7 @@
   border-radius: var(--dl-radius-radius-radius4);
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-gray-900);
+  /*background-color: var(--dl-color-gray-900);*/
 }
 
 .home-text10 {
@@ -565,7 +563,7 @@
   border-radius: var(--dl-radius-radius-radius4);
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-gray-900);
+  /*background-color: var(--dl-color-gray-900);*/
 }
 
 .home-text12 {
@@ -665,6 +663,8 @@
   }
 
   .home-heading-container1 {
+    margin-bottom: var(--dl-space-space-fiveunits);
+    margin-top: var(--dl-space-space-halfunit);
     width: 100%;
   }
 
@@ -686,6 +686,11 @@
 
   .home-service-card2 {
     width: 65%;
+  }
+  .home-text08 {
+    text-align: center;
+    margin-top: var(--dl-space-space-halfunit);
+    margin-bottom: var(--dl-space-space-fourunits);
   }
 }
 
@@ -735,7 +740,7 @@
   }
 
   .home-services {
-    padding-top: var(--dl-space-space-fiveunits);
+    /*padding-top: var(--dl-space-space-fiveunits);*/
     padding-bottom: var(--dl-space-space-fiveunits);
   }
 
