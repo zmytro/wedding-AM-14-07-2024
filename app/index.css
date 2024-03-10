@@ -22,6 +22,16 @@
     /* Add additional src declarations for other font formats if needed */
 }
 
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
 .home-container {
   width: 100%;
   height: auto;
@@ -773,7 +783,7 @@
   .home-features {
     padding-top: var(--dl-space-space-fiveunits);
     padding-bottom: var(--dl-space-space-fiveunits);
-    text-align: justify;
+    text-align: left;
   }
 
   .home-features-card {

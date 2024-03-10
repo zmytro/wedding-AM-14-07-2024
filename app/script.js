@@ -48,3 +48,19 @@ var timer = setInterval(function () {
     timerElementSeconds.innerHTML = seconds;
 
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const blocks = document.querySelectorAll('.fade-in');
+
+    function fadeInBlocks(index) {
+        if (index < blocks.length) {
+            setTimeout(function() {
+                blocks[index].classList.add('active');
+                fadeInBlocks(index + 1);
+            }, 500); // Задержка между появлением блоков в миллисекундах
+        }
+    }
+
+    fadeInBlocks(0);
+    console.log('fadeInBlocks');
+});
