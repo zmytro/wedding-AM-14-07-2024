@@ -1,0 +1,640 @@
+@font-face {
+  font-family: 'Bickham';
+  src: url('../src/fonts/Bickham.ttf')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+@font-face {
+  font-family: 'Cormorant Regular';
+  src: url('../src/fonts/CormorantGaramond-Regular.ttf')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+@font-face {
+  font-family: 'Cormorant Bold';
+  src: url('../src/fonts/CormorantGaramond-Bold.ttf')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+@font-face {
+  font-family: 'Cormorant Semi-Bold';
+  src: url('../src/fonts/CormorantGaramond-SemiBold.ttf')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+@font-face {
+  font-family: 'Cloister';
+  src: url('../src/fonts/Cloister_Open_Face_Regular.otf')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap')
+    /* Add additional src declarations for other font formats if needed */
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  max-height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #CBCBCB;
+  outline: 2px solid #FFF;
+  outline-offset: -2px;
+  border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
+
+
+/*
+#timerDays {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-right: 5%;
+  background-color: transparent;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+#timerHours {
+  display: flex;
+  width: auto;
+  margin-right: 5%;
+  height: auto;
+  background-color: transparent;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+
+}
+
+#timerMinutes {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-right: 5%;
+  background-color: transparent;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+
+}
+
+#timerSeconds {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}*/
+
+
+
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-space-space-unit: 8px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-radius-radius-round: 50%;
+  --dl-size-size-maxcontent: 1414px;
+  --dl-space-space-halfunit: 2px;
+  --dl-space-space-tenunits: 40px;
+  --dl-radius-radius-radius2: 1px;
+  --dl-radius-radius-radius4: 2px;
+  --dl-radius-radius-radius8: 4px;
+  --dl-space-space-logo: 5px;
+  --dl-space-space-fiveunits: 20px;
+  --dl-space-space-fourunits: 16px;
+  --dl-radius-radius-radius24: 12px;
+  --dl-space-space-doubleunit: 8px;
+  --dl-space-space-tripleunit: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  #image2 {
+    max-width: 100%; /* Максимальная ширина изображения равна ширине div */
+    max-height: 100%; /* Максимальная высота изображения равна высоте div */
+    display: block; /* Чтобы изображение выровнялось по центру */
+    margin: auto; /* Чтобы изображение выровнялось по центру */
+  }
+
+  .teleport-show {
+    display: flex !important;
+    transform: none !important;
+  }
+
+  .list {
+    width: 100%;
+    margin: 1em 0px 1em 0px;
+    display: block;
+    padding: 0px 0px 0px 1.5rem;
+    list-style-type: none;
+    list-style-position: outside;
+  }
+
+  .list-item {
+    display: list-item;
+  }
+
+  .button {
+    color: var(--dl-color-gray-black);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .textarea {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .input {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem 1rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .Section-Text {
+    font-size: 20px;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .SmallCard-Heading {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Text {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Text-href {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .BigCard-Heading {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Heading {
+    font-size: 22px;
+    font-style: normal;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: -1px;
+  }
+
+  .Anchor {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .Section-Heading {
+    
+    white-space: nowrap;
+    font-size: 10.5vw;
+    font-family: Bickham;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+
+  }
+
+  .Section-Heading-1 {
+    font-size: 20px;
+    font-family: Cormorant Semi-Bold;
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+
+
+  }
+
+  .Section-Heading-2 {
+    font-size: 20px;
+    font-family: Cormorant Semi-Bold;
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+
+
+  }
+
+.Section-Heading3{
+  white-space: nowrap;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 10.5vw;
+  font-family: Bickham;
+  font-weight: 400;
+  line-height: 1.22;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+
+}
+  .timer {
+    min-width: 50px; /* Примерная минимальная ширина блока */
+    white-space: nowrap;
+    font-size: 8vw;
+    font-family: Cloister;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+  .sketchy {
+    padding: 0rem 2rem;
+    display: inline-block;
+    border: 1px solid #333333;
+    /* font-size: 2.5rem; */
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    /* background: #ffffff; */
+    position: relative;
+    /*margin-top: 5%;*/
+
+    &::before {
+      content: '';
+      border: 1px solid #353535;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(1deg);
+      border-radius: 10% 1% 2% 9% / 2% 6% 5% 4%;
+    }
+  }
+  .date-icon{
+    width: 2px;
+  }
+  #timerDays,
+  #timerHours,
+  #timerMinutes,
+  #timerSeconds{
+      flex: 1;
+      display: flex;
+      height: auto;
+      margin-right: 5%;
+      background-color: transparent;
+      text-align: center;
+      justify-content: center;
+      align-items: baseline;
+  }
+  
+  .timer-days-span,
+  .timer-hours-span,
+  .timer-minutes-span,
+  .timer-seconds-span {
+    font-size: 5vw;
+    color: #8d8d8d;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+
+  #image2 {
+    max-width: 100%; /* Максимальная ширина изображения равна ширине div */
+    max-height: 100%; /* Максимальная высота изображения равна высоте div */
+    display: block; /* Чтобы изображение выровнялось по центру */
+    margin: auto; /* Чтобы изображение выровнялось по центру */
+  }
+
+
+  .teleport-show {
+    display: flex !important;
+    transform: none !important;
+  }
+
+  .list {
+    width: 100%;
+    margin: 1em 0px 1em 0px;
+    display: block;
+    padding: 0px 0px 0px 1.5rem;
+    list-style-type: none;
+    list-style-position: outside;
+  }
+
+  .list-item {
+    display: list-item;
+  }
+
+  .button {
+    color: var(--dl-color-gray-black);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .textarea {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .input {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem 1rem;
+    font-family: Raleway;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  .Section-Text {
+    font-size: 24px;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .SmallCard-Heading {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Text {
+    font-size: 20px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+
+  .Card-Text-href {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .BigCard-Heading {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Card-Heading {
+    font-size: 28px;
+    font-style: normal;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Anchor {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .Section-Heading {
+    white-space: nowrap;
+    font-size: 9vw;
+    font-family: Bickham;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Section-Heading-2 {
+    font-size: 24px;
+    font-family: Cormorant Semi-Bold;
+    white-space: normal;
+    margin-top: 0.5em;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+
+
+  }
+
+  .Section-Heading-1 {
+    font-size: 24px;
+    font-family: Cormorant Semi-Bold;
+    font-weight: 400;
+    white-space: normal;
+    /* Позволяем перенос текста на новую строку */
+    line-height: 1.2em;
+    /* Устанавливаем высоту строки */
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .Section-Heading3{
+    white-space: nowrap;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    font-size: 8vw;
+    font-family: Bickham;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .timer {
+     /* или 100% в зависимости от ваших потребностей */
+    min-width: 50px; /* Примерная минимальная ширина блока */
+    white-space: nowrap;
+    font-size: 4vw;
+    font-family: Cloister;
+    font-weight: 400;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .sketchy {
+    padding: 0rem 4rem;
+    display: inline-block;
+    border: 2px solid #333333;
+    /* font-size: 2.5rem; */
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    /* background: #ffffff; */
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    &::before {
+      content: '';
+      border: 2px solid #353535;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(1deg);
+      border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
+  }
+  #timerDays,
+  #timerHours,
+  #timerMinutes,
+  #timerSeconds{
+      flex: 1;
+      display: flex;
+      height: auto;
+      margin-right: 5%;
+      background-color: transparent;
+      text-align: center;
+      justify-content: center;
+      align-items: baseline;
+  }
+  
+  .timer-days-span,
+  .timer-hours-span,
+  .timer-minutes-span,
+  .timer-seconds-span {
+    font-size: 2vw;
+    color: #8d8d8d;
+  }
+}
