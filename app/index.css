@@ -108,16 +108,17 @@
     flex-direction: column;
   }
 
-  .home-hero-photo-1 img {
+  /*.home-hero-photo-1 img {
     width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: row;
-    image-rendering: -webkit-optimize-contrast; /* для Webkit браузеров */
-    image-rendering: pixelated; /* для остальных браузеров */
+    image-rendering: -webkit-optimize-contrast; /* для Webkit браузеров 
+    image-rendering: pixelated; /* для остальных браузеров 
     border-radius: 10px;
   }
+    */
 
   .home-hero-photo-2 {
     display: flex;
@@ -178,14 +179,14 @@
     flex-direction: column;
   }
 
-  .home-hero-photo-1 img {
+  /*.home-hero-photo-1 img {
     width: 80%;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: row;
     border-radius: 10px;
-  }
+  }*/
 
   .home-hero-photo-2 {
     display: flex;
