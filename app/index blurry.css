@@ -595,7 +595,7 @@
 }
 
 .home-service-card {
-  width: 30%;
+  /*width: 30%;*/
   display: flex;
   padding-left: var(--dl-space-space-fourunits);
   padding-right: var(--dl-space-space-fourunits);
