@@ -107,6 +107,14 @@
     text-align: center;
     flex-direction: column;
   }
+  .home-heading-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-tenunits);
+    flex-direction: column;
+    text-align: justify;
+  }
 
   /*.home-hero-photo-1 img {
     width: 100%;
@@ -208,6 +216,14 @@
     text-align: center;
     margin-bottom: var(--dl-space-space-tenunits);
   }
+  .home-heading-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-fiveunits);
+    flex-direction: column;
+    text-align: justify;
+  }
 
 }
 
@@ -242,6 +258,7 @@
   padding-bottom: var(--dl-space-space-fiveunits);
   text-align: justify;
 }
+/*
 
 .home-heading-container {
   width: 100%;
@@ -250,7 +267,7 @@
   margin-bottom: var(--dl-space-space-tenunits);
   flex-direction: column;
   text-align: justify;
-}
+}*/
 
 .home-text01 {
   text-align: center;
