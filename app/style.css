@@ -158,6 +158,15 @@
     border-radius: 15px;
   }
 
+  #image4 {
+    max-width: 80%; /* Максимальная ширина изображения равна ширине div */
+    max-height: 100%; /* Максимальная высота изображения равна высоте div */
+    display: block; /* Чтобы изображение выровнялось по центру */
+    margin: auto; /* Чтобы изображение выровнялось по центру */
+    margin-bottom: 1.2em;
+    border-radius: 15px;
+  }
+
   .teleport-show {
     display: flex !important;
     transform: none !important;
@@ -419,6 +428,14 @@
     margin: auto; /* Чтобы изображение выровнялось по центру */
     margin-bottom: 1.2em;
     background: #cfcfcf40;
+    border-radius: 15px;
+  }
+  #image4 {
+    max-width: 100%; /* Максимальная ширина изображения равна ширине div */
+    max-height: 100%; /* Максимальная высота изображения равна высоте div */
+    display: block; /* Чтобы изображение выровнялось по центру */
+    margin: auto; /* Чтобы изображение выровнялось по центру */
+    margin-bottom: 1.2em;
     border-radius: 15px;
   }
 

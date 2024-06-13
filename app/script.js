@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 blocks[index].classList.add('active');
                 fadeInBlocks(index + 1);
-            }, 500); // Задержка между появлением блоков в миллисекундах
+            }, 500); 
         }
     }
 
