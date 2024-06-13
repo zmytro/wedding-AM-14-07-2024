@@ -131,51 +131,58 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
     data-tag="font" />
   <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     .carousel {
-            position: relative;
-            width:100%;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .carousel-wrapper {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
-        .carousel img {
-            width: 100%;
-            flex-shrink: 0;
-        }
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-wrapper {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+    }
   </style>
   <script>
     window.addEventListener('load', () => {
-            let currentIndex = 0;
-            const slides = document.querySelectorAll('.carousel img');
-            const totalSlides = slides.length;
-            const wrapper = document.querySelector('.carousel-wrapper');
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.carousel img');
+      const totalSlides = slides.length;
+      const wrapper = document.querySelector('.carousel-wrapper');
 
-            function showSlide(index) {
-                wrapper.style.transform = `translateX(-${index * 100}%)`;
-            }
+      function showSlide(index) {
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
+      }
 
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                showSlide(currentIndex);
-            }
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+      }
 
-            setInterval(nextSlide, 3000); // Change image every 3 seconds
-          });
-</script>
+      setInterval(nextSlide, 3000); // Change image every 3 seconds
+    });
+  </script>
 </head>
 
 <body>
+
   <link rel="stylesheet" href="app/style.css" />
   <div>
+
     <link href="app/index.css" rel="stylesheet" />
+    <link href="app/topBtn.css" rel="stylesheet" />
 
     <div class="home-container">
 
@@ -195,13 +202,13 @@
         <div class="home-hero-photo-1 fade-in" id="block3">
           <div class="carousel">
             <div class="carousel-wrapper">
-                <img src="src/img/1.jpg" alt="Slide 1">
-                <img src="src/img/slide2.jpg" alt="Slide 2">
-                <img src="src/img/slide3.jpg" alt="Slide 3">
-                <img src="src/img/slide4.jpg" alt="Slide 4">
+              <img src="src/img/1.jpg" alt="Slide 1">
+              <img src="src/img/slide2.jpg" alt="Slide 2">
+              <img src="src/img/slide3.jpg" alt="Slide 3">
+              <img src="src/img/slide4.jpg" alt="Slide 4">
             </div>
-        </div>
-        <!--
+          </div>
+          <!--
           <img src="src/img/1.jpg" alt="" class="image-test">
           -->
         </div>
@@ -272,7 +279,7 @@
             <div class="home-text-container1">
               <span class="home-heading2 Card-Heading">09:30 • Сборы Жениха</span>
               <span class="home-text03 Card-Text">
-              Родительский Дом Жениха
+                Родительский Дом Жениха
               </span>
               <span class="home-text02 Card-Text-href"><a href="https://maps.app.goo.gl/69Ac9oA9oy4akySC9"
                   target="_blank" class="card-href">с. Конгаз, ул. Ленина, 201</a> 📍</span>
@@ -389,6 +396,7 @@
         </div>
         <div class="home-cards-container1">
           <div class="home-service-card">
+            <div><img src="src/img/page-divider.png" alt="" id="image3"></div>
             <div class="color-shapes">
               <h2 class="home-text001 Section-Heading-1" id="block6">
                 Нам будет очень приятно, если вы поддержите цветовую палитру нашей свадьбы
@@ -404,10 +412,11 @@
           Будем очень рады видеть Вас!
         </h2>
       </div>
-      <div class="home-section-separator">
-      </div>
+      <div class="home-section-separator"></div>
     </div>
   </div>
+  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+  <script src="app/onTopBtn.js"></script>
   <script defer="" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
 

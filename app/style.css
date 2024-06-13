@@ -658,3 +658,35 @@
     color: #8d8d8d;
   }
 }
+
+.sketchy-line {
+  width: 50%; /* 2/4 ширины страницы */
+  height: 10px;
+  margin: 20px auto; /* Центрируем линию */
+  background: linear-gradient(to right, transparent, black 50%, transparent);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+.sketchy-line::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: white;
+  transform: rotate(-2deg);
+}
+
+.sketchy-line::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: white;
+  transform: rotate(2deg);
+}

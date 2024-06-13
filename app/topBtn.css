@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 2000px; /* Для демонстрации скролла */
+    padding: 20px;
+}
+
+#scrollTopBtn {
+    display: none; /* Изначально скрыта */
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    z-index: 99; /* Убедитесь, что кнопка выше других элементов */
+    width: 50px; 
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.3s; /* Плавный переход */
+    opacity: 20%;
+}
+
+#scrollTopBtn i {
+    margin: auto; /* Центрируем иконку */
+}
+
+#scrollTopBtn:hover {
+    background-color: #333;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+    #scrollTopBtn {
+        right: 20px;
+        bottom: 0px;
+        width: 50px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
