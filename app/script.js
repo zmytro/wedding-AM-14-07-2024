@@ -64,3 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
     fadeInBlocks(0);
     console.log('fadeInBlocks');
 });
+
+
+//TODO add a loading page when loading a page with slow 3g network
