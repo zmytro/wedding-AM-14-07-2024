@@ -53,6 +53,7 @@ var timer = setInterval(function () {
 
 
 window.addEventListener("load", function() {
+
      // Добавляем класс для скрытия загрузочного экрана
      document.getElementById('loader').classList.add('hidden');
         
