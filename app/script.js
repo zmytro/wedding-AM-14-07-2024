@@ -49,7 +49,21 @@ var timer = setInterval(function () {
 
 }, 1000);
 
-document.addEventListener("DOMContentLoaded", function() {
+
+
+
+window.addEventListener("load", function() {
+     // Добавляем класс для скрытия загрузочного экрана
+     document.getElementById('loader').classList.add('hidden');
+        
+     // Делаем паузу, чтобы переход завершился, и затем скрываем элемент из DOM
+     setTimeout(function() {
+         // Скрываем загрузочный экран из DOM
+         document.getElementById('loader').style.display = 'none';
+         // Показываем основной контент
+         document.getElementById('home-container').style.display = 'flex';
+ 
+
     const blocks = document.querySelectorAll('.fade-in');
 
     function fadeInBlocks(index) {
@@ -63,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     fadeInBlocks(0);
     console.log('fadeInBlocks');
+}, 0); // Время задержки должно совпадать с временем transition
 });
+
 
 
 //TODO add a loading page when loading a page with slow 3g network
