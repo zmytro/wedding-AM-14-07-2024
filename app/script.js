@@ -1,5 +1,6 @@
 var targetDate = new Date("July 14, 2024 20:00:00").getTime();
 
+const loadStartTime = new Date().getTime();
 
 var timer = setInterval(function () {
 
@@ -53,10 +54,26 @@ var timer = setInterval(function () {
 
 
 window.addEventListener("load", function() {
+    const loadEndTime = new Date().getTime();
+    const loadTime = loadEndTime - loadStartTime;
 
+    // Проверяем, было ли это первое посещение
+    const isFirstVisit = !sessionStorage.getItem('visited');
+    
+    // Если это первое посещение, добавляем запись в sessionStorage
+    if (isFirstVisit) {
+        sessionStorage.setItem('visited', 'true');
+    }
+
+    // Устанавливаем задержку только если это первое посещение и время загрузки меньше 3 секунд
+    const delay = (isFirstVisit && loadTime < 3000) ? 1500 : 0;
+
+    console.log("Загрузка страницы заняла: " + loadTime + " мс");
+    console.log(delay);
+    setTimeout(function() {
      // Добавляем класс для скрытия загрузочного экрана
      document.getElementById('loader').classList.add('hidden');
-        
+    
      // Делаем паузу, чтобы переход завершился, и затем скрываем элемент из DOM
      setTimeout(function() {
          // Скрываем загрузочный экран из DOM
@@ -79,6 +96,7 @@ window.addEventListener("load", function() {
     fadeInBlocks(0);
     console.log('fadeInBlocks');
 }, 0); // Время задержки должно совпадать с временем transition
+}, delay);
 });
 
 
