@@ -68,7 +68,7 @@
     [type="button"],
     [type="reset"],
     [type="submit"] {
-      -webkit-appearance: button;
+      appearance: button;
     }
 
     button::-moz-focus-inner,
@@ -209,26 +209,6 @@
 
 
   </style>
-  <script>
-    window.addEventListener('load', () => {
-      
-            let currentIndex = 0;
-            const slides = document.querySelectorAll('.carousel img');
-            const totalSlides = slides.length;
-            const wrapper = document.querySelector('.carousel-wrapper');
-
-            function showSlide(index) {
-                wrapper.style.transform = `translateX(-${index * 100}%)`;
-            }
-
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                showSlide(currentIndex);
-            }
-
-            setInterval(nextSlide, 3000); // Change image every 3 seconds
-          });
-</script>
   
 </head>
 

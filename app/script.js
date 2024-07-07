@@ -70,7 +70,9 @@ window.addEventListener("load", function() {
 
     console.log("Загрузка страницы заняла: " + loadTime + " мс");
     console.log(delay);
+
     setTimeout(function() {
+
      // Добавляем класс для скрытия загрузочного экрана
      document.getElementById('loader').classList.add('hidden');
     
@@ -95,6 +97,25 @@ window.addEventListener("load", function() {
 
     fadeInBlocks(0);
     console.log('fadeInBlocks');
+
+
+      
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        const totalSlides = slides.length;
+        const wrapper = document.querySelector('.carousel-wrapper');
+
+        function showSlide(index) {
+            wrapper.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Change image every 3 seconds
+
 }, 0); // Время задержки должно совпадать с временем transition
 }, delay);
 });
