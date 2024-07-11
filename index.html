@@ -162,7 +162,15 @@
 
 
     .carousel-wrapper {
+      display: -webkit-box;
+      /* Safari and older browsers */
+      display: -ms-flexbox;
+      /* IE 10 */
       display: flex;
+      -webkit-transition: -webkit-transform 1s ease-in-out;
+      /* Safari and older browsers */
+      transition: -webkit-transform 1s ease-in-out;
+      /* Safari and older browsers */
       transition: transform 1s ease-in-out;
     }
 
@@ -170,7 +178,8 @@
       width: 100%;
       flex-shrink: 0;
     }
-/*
+
+    /*
 
     #loader {
       position: fixed;
@@ -224,7 +233,7 @@
       justify-content: center;
       align-items: center;
       animation: blink 1.5s infinite;
-      background-image: url('src/img/compress/Linonia_Bookplate_500.png');
+      background-image: url('src/img/compress/Linonia_Bookplate_500_new.png');
     }
 
     @keyframes blink {
