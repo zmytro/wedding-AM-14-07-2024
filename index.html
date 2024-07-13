@@ -3,6 +3,8 @@
 
 <head>
   <title>Alexander & Maria Wedding</title>
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="ru">
   <link rel="icon" type="image/x-icon" href="src/img/compress/Linonia_Bookplate_new.png">
   <meta property="og:title" content="Alexander & Maria Wedding" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -160,7 +162,15 @@
 
 
     .carousel-wrapper {
+      display: -webkit-box;
+      /* Safari and older browsers */
+      display: -ms-flexbox;
+      /* IE 10 */
       display: flex;
+      -webkit-transition: -webkit-transform 1s ease-in-out;
+      /* Safari and older browsers */
+      transition: -webkit-transform 1s ease-in-out;
+      /* Safari and older browsers */
       transition: transform 1s ease-in-out;
     }
 
@@ -169,7 +179,8 @@
       flex-shrink: 0;
     }
 
-    /* Загрузочный экран */
+    /*
+
     #loader {
       position: fixed;
       left: 0;
@@ -186,12 +197,43 @@
       background-size: 120px;
     }
 
+
+    .blinking-image {
+      width: 300px;
+      height: 242px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: blink 1.5s infinite;
+    }*/
+
+    #loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      background-image: url('src/img/white-grey-scratone.png');
+      background-size: 120px;
+    }
+
     /* Анимация мигания для изображения */
     .blinking-image {
       width: 300px;
       height: 242px;
       background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       animation: blink 1.5s infinite;
+      background-image: url('src/img/compress/Linonia_Bookplate_500_new.png');
     }
 
     @keyframes blink {
@@ -225,8 +267,8 @@
     <link href="app/index.css" rel="stylesheet" />
     <link href="app/topBtn.css" rel="stylesheet" />
 
-    <div id="loader" style="background-image: url('src/img/white-grey-scratone.png')">
-      <div class="blinking-image" style="background-image: url('src/img/compress/Linonia_Bookplate_500.png')"></div>
+    <div id="loader">
+      <div class="blinking-image"></div>
     </div>
     <div class="home-container" id='home-container' style="display: none;">
 
