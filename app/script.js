@@ -1,4 +1,4 @@
-var targetDate = new Date("July 14, 2024 08:00:00").getTime();
+var targetDate = new Date("July 27, 2025 08:00:00").getTime();
 
 window.addEventListener("DOMContentLoaded", function () {
 
